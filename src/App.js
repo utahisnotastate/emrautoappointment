@@ -1,11 +1,9 @@
-import EMRAutoAppointment from "./emrautoappointment";
-import './App.css';
-//Developed by Utah Hans for lablab Google Vertex AI Hackathon
-// https://lablab.ai/event/google-vertex-ai-hackathon
+import React from 'react';
+import SpeechToText from "./components/speechtotext";
 function App() {
   return (
     <div className="App">
-    <EMRAutoAppointment />
+  <SpeechToText />
     </div>
   );
 }

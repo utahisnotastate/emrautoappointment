@@ -1,13 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import annyang from 'annyang';
 import { Button, Container, Typography, Paper, Box, TextField } from '@mui/material';
-import { DiscussServiceClient } from "@google-ai/generativelanguage";
-import { GoogleAuth } from "google-auth-library";
+
 
 const SpeechToText = () => {
     const [isListening, setIsListening] = useState(false);
     const [transcript, setTranscript] = useState('');
-    const [apiResponse, setApiResponse] = useState(null);
+    const [gpt3Response, setGpt3Response] = useState('');
 
     useEffect(() => {
         if (annyang) {

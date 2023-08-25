@@ -1,5 +1,5 @@
 import React from 'react';
-import SpeechToText from "./components/speechtotext";
+import SpeechToText from "./api/speechtotext_updated";
 function App() {
   return (
     <div className="App">

@@ -3,10 +3,11 @@ import annyang from 'annyang';
 import { Button, Container, Typography, Paper, Box, TextField } from '@mui/material';
 
 
+
 const SpeechToText = () => {
     const [isListening, setIsListening] = useState(false);
     const [transcript, setTranscript] = useState('');
-  const [gpt3Response, setGpt3Response] = useState('');
+    const [gpt3Response, setGpt3Response] = useState('');
 
     useEffect(() => {
         if (annyang) {

@@ -1,10 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import annyang from 'annyang';
-import { Button, Container, Typography, Paper, Box, TextField } from '@mui/material';
-
-
-
-const SpeechToText = () => {
+import { Button, Container, Typography, Paper, Box, TextField } from '@mui/material';const SpeechToText = () => {
     const [isListening, setIsListening] = useState(false);
     const [transcript, setTranscript] = useState('');
     const [gpt3Response, setGpt3Response] = useState('');
@@ -48,7 +44,7 @@ return () => {
                     content: transcript
                 }
             ],
-            max_tokens: 1500,
+            max_tokens: 1000,
             temperature: 0.6,
             top_p: 0.9,
             frequency_penalty: -0.5,

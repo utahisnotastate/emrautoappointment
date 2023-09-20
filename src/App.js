@@ -8,7 +8,7 @@ import '@fontsource/roboto/700.css';
 function App() {
   return (
     <div className="App">
-  <SpeechToText />
+        <SpeechToText />
     </div>
   );
 }
